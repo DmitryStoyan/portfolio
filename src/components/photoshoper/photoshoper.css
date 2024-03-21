@@ -4,6 +4,10 @@
 }
 
 .photoshoper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 104px;
   font-family: "Manrope", serif;
   width: 100%;
   max-width: 1200px;
@@ -23,7 +27,20 @@
   font-weight: 500;
   line-height: 60px;
   color: #ebe3ce;
+  margin: 24px 0;
   width: 588px;
+}
+
+.photoshoper__messageWrapper {
+  display: flex;
+  align-items: end;
+}
+
+.photoshoper__imgArrow {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .photoshoper__messageTitle {
@@ -39,4 +56,22 @@
   filter: blur(0.5px);
   text-align: center;
   transform: rotate(5deg);
+}
+
+.title-text {
+  font-family: "Open Sans";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 25.5px;
+  max-width: 409px;
+  color: #ebe3ce;
+}
+
+.photoshoper__slider {
+  outline: 3px red solid;
+}
+
+.photoshoper__slider_right {
+  outline: 3px red solid;
+  order: 2 !important;
 }

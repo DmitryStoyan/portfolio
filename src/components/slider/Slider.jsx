@@ -10,10 +10,11 @@ export const Slider = () => (
     aria-label="My Favorite Images"
     options={{
       type: "loop",
-      width: 300,
+      width: 400,
       focus: "center",
       gap: "1rem",
-      padding: { left: "25%", right: "25%" },
+      wheel: true,
+      wheelSleep: 300,
     }}
   >
     <SplideSlide>
