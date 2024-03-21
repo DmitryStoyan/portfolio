@@ -1,0 +1,7 @@
+.img {
+  outline: 3px red solid;
+}
+
+.splide__slider {
+  overflow: hidden;
+}

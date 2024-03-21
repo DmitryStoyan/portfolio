@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.photoshoper {
+  font-family: "Manrope", serif;
+  width: 100%;
+  max-width: 1200px;
+  outline: 3px red solid;
+  margin: 0 auto;
+}
+
+.photoshoper__title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31px;
+  color: #eac566;
+}
+
+.photoshoper__subtitle {
+  font-size: 46px;
+  font-weight: 500;
+  line-height: 60px;
+  color: #ebe3ce;
+  width: 588px;
+}
+
+.photoshoper__messageTitle {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  background-color: #e9e9eb;
+  color: #2a2a29;
+  border-radius: 24.5px 24.5px 4px 24.5px;
+  width: 263px;
+  padding: 10px 0;
+  filter: blur(0.5px);
+  text-align: center;
+  transform: rotate(5deg);
+}

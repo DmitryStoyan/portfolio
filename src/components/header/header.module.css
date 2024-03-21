@@ -1,0 +1,66 @@
+@import "../../assets/fonts/fonts.css";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  font-family: "Manrope", serif;
+  width: 100%;
+  max-width: 1200px;
+  background-color: #1c1c21;
+  outline: 3px red solid;
+  margin: 43px auto 0;
+}
+
+.header__navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.header__item {
+  margin: 0 28px 0 0;
+}
+
+.header__item:last-of-type {
+  margin: 0;
+}
+
+.header__link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  transition: opacity 0.3s ease;
+}
+
+.header__link:hover {
+  opacity: 0.7;
+}
+
+.header__button {
+  background-color: transparent;
+  border: 1px #fff solid;
+  color: #fff;
+  width: 137px;
+  height: 32px;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.header__button:hover {
+  opacity: 0.7;
+}
+
+.header__link_active {
+  color: #eac566;
+}
