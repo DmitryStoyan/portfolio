@@ -36,9 +36,10 @@
   text-decoration: none;
   color: #ffffff;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 26px;
   transition: opacity 0.3s ease;
+  color: #eac566;
 }
 
 .header__link:hover {
