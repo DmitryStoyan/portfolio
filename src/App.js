@@ -29,6 +29,7 @@ function App() {
           imageSrc: smileImg,
           messageTitle: "this is the perfect code",
           sliderClass: "photoshoper__slider_right",
+          messageWrapperClass: "photoshoper__messageTitle_right",
         }}
       />
     </div>

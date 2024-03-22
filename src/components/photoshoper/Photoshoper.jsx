@@ -1,24 +1,25 @@
 import React from "react";
-import "./photoshoper.css";
+import styles from "./photoshoper.module.css";
 import { Slider } from "../slider/Slider";
 
 export function Photoshoper(props) {
   return (
-    <section className="photoshoper">
-      <div className={`photoshoper__slider ${props.info.sliderClass}`}>
+    <section className={styles.photoshoper}>
+      <div className={styles[props.info.sliderClass]}>
         <Slider />
       </div>
-      <div className="photoshoper__description">
-        <h2 className="photoshoper__title">{props.info.title}</h2>
-        <h3 className="photoshoper__subtitle">{props.info.subtitle}</h3>
-        <p className="title-text">{props.info.title_text}</p>
-        <div className="photoshoper__messageWrapper">
+      <div className={styles.photoshoper__description}>
+        <h3 className={styles.photoshoper__title}>{props.info.title}</h3>
+        <p className={styles.photoshoper__subtitle}>{props.info.subtitle}</p>
+        <div className={`${styles.photoshoper__messageWrapper}`}>
           <img
-            className="photoshoper__imgArrow"
+            className={`${styles.photoshoper__imgArrow} ${
+              styles[props.info.messageWrapperClass]
+            }`}
             src={props.info.imageSrc}
             alt=""
           />
-          <span className="photoshoper__messageTitle">
+          <span className={`${styles.photoshoper__messageTitle}`}>
             {props.info.messageTitle}
           </span>
         </div>

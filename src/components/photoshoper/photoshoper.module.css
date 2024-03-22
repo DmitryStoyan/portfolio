@@ -67,11 +67,10 @@
   color: #ebe3ce;
 }
 
-.photoshoper__slider {
-  outline: 3px red solid;
+.photoshoper__slider_right {
+  order: 2 !important;
 }
 
-.photoshoper__slider_right {
-  outline: 3px red solid;
-  order: 2 !important;
+.photoshoper__messageTitle_right {
+  order: 1 !important;
 }
