@@ -5,8 +5,19 @@ import { Photoshoper } from "./components/photoshoper/Photoshoper";
 import { Slider } from "./components/slider/Slider";
 import arrowImg from "./images/arrow.svg";
 import smileImg from "./images/smile.png";
+import img1 from "./images/hero-img.png";
+import img2 from "./images/smile.png";
 
 function App() {
+  const [slides, setSlides] = useState([
+    { id: 1, href: "#", src: img1, alt: "img1" },
+    { id: 2, href: "#", src: img2, alt: "img2" },
+  ]);
+  const [slides2, setSlides2] = useState([
+    { id: 1, href: "#", src: img1, alt: "img3" },
+    { id: 2, href: "#", src: img2, alt: "img4" },
+  ]);
+
   return (
     <div className="App">
       <Header />
@@ -19,6 +30,7 @@ function App() {
           imageSrc: arrowImg,
           messageTitle: "there are a lot of pictures",
         }}
+        slides={slides}
       />
       <Photoshoper
         info={{
@@ -30,7 +42,9 @@ function App() {
           messageTitle: "this is the perfect code",
           sliderClass: "photoshoper__slider_right",
           messageWrapperClass: "photoshoper__messageTitle_right",
+          text: "Are you tired working with 2, 3 or 4 different teams? Conflicts, misunderstanding, too much time spent on communication are",
         }}
+        slides={slides2}
       />
     </div>
   );

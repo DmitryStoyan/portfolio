@@ -1,41 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/css";
-import img1 from "../../images/hero-img.png";
-import img2 from "../../images/smile.png";
 import styles from "./slider.module.css";
 
-export const Slider = () => (
-  <Splide
-    aria-label="My Favorite Images"
-    options={{
-      type: "loop",
-      width: 400,
-      focus: "center",
-      gap: "1rem",
-      wheel: true,
-      wheelSleep: 300,
-    }}
-  >
-    <SplideSlide>
-      <a href="#">
-        <img src={img1} alt="Image 1" className={styles.img} />
-      </a>
-    </SplideSlide>
-    <SplideSlide>
-      <a href="#">
-        <img src={img2} alt="Image 2" className={styles.img} />
-      </a>
-    </SplideSlide>
-    <SplideSlide>
-      <a href="#">
-        <img src={img1} alt="Image 3" className={styles.img} />
-      </a>
-    </SplideSlide>
-    <SplideSlide>
-      <a href="#">
-        <img src={img2} alt="Image 4" className={styles.img} />
-      </a>
-    </SplideSlide>
-  </Splide>
-);
+export const Slider = ({ slides }) => {
+  return (
+    <Splide
+      aria-label="My Favorite Images"
+      options={{
+        type: "loop",
+        width: 400,
+        focus: "center",
+        gap: "1rem",
+        wheel: true,
+        wheelSleep: 300,
+      }}
+    >
+      {slides.map((slide) => (
+        <SplideSlide key={slide.id}>
+          <a href={slide.href}>
+            <img src={slide.src} alt={slide.alt} className={styles.img} />
+          </a>
+        </SplideSlide>
+      ))}
+    </Splide>
+  );
+};
