@@ -5,8 +5,7 @@
   width: 100%;
   max-width: 1200px;
   outline: 3px red solid;
-  margin: 0 auto;
-  padding: 150px 0;
+  margin: 150px auto 0;
 }
 
 .advantages__title {
