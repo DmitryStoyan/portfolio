@@ -1,0 +1,22 @@
+.excellence__title {
+  font-family: "Open Sans";
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 52px;
+  color: #ebe3ce;
+  width: 170px;
+  min-height: 100px;
+  margin: 0 0 16px 0;
+}
+
+.excellence__dot {
+  color: #eac566;
+}
+
+.excellence__subtitle {
+  font-family: "Open Sans";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 25.5px;
+  color: #ebe3ce;
+}

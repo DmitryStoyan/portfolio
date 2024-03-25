@@ -1,0 +1,44 @@
+.project {
+  outline: 3px red solid;
+  /* max-width: 588px; */
+}
+
+.project__descriptionWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 0 0;
+  outline: 3px red solid;
+}
+
+.project__title {
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+.project__button {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  border: none;
+  border-bottom: 2px #ffffff solid;
+  background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  padding: 0 0 6px 0;
+}
+
+.project__button:hover {
+  opacity: 0.5;
+}
+
+.button_img {
+  margin: 0 0 0 10px;
+}

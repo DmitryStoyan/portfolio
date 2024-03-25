@@ -7,6 +7,9 @@ import arrowImg from "./images/arrow.svg";
 import smileImg from "./images/smile.png";
 import img1 from "./images/hero-img.png";
 import img2 from "./images/smile.png";
+import { Advantages } from "./components/advantages/Advantages";
+import { Project } from "./components/project/Project";
+import { Projects } from "./components/projects/Projects";
 
 function App() {
   const [slides, setSlides] = useState([
@@ -46,6 +49,8 @@ function App() {
         }}
         slides={slides2}
       />
+      <Advantages />
+      <Projects />
     </div>
   );
 }

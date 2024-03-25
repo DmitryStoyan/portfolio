@@ -1,0 +1,27 @@
+.projects {
+  font-family: "Manrope", serif;
+  width: 100%;
+  max-width: 1200px;
+  background-color: #1c1c21;
+  outline: 3px red solid;
+  margin: 43px auto 0;
+}
+
+.projects__title {
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 104px;
+  color: #eac566;
+  margin: 0 0 48px 0;
+}
+
+.projects__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.fullWidth {
+  margin: 40px 0;
+  width: 100%;
+}

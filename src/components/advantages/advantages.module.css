@@ -1,0 +1,25 @@
+.advantages {
+  display: flex;
+  flex-direction: column;
+  font-family: "Manrope", serif;
+  width: 100%;
+  max-width: 1200px;
+  outline: 3px red solid;
+  margin: 0 auto;
+  padding: 150px 0;
+}
+
+.advantages__title {
+  font-family: Manrope;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 104px;
+  color: #eac566;
+  margin: 0 0 48px 0;
+}
+
+.advantages__list {
+  display: flex;
+  list-style-type: none;
+  gap: 39px;
+}
