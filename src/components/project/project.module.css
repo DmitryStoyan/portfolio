@@ -1,13 +1,12 @@
 .project {
-  outline: 3px red solid;
-  /* max-width: 588px; */
+  text-decoration: none;
+  color: inherit;
 }
 
 .project__descriptionWrapper {
   display: flex;
   justify-content: space-between;
   margin: 20px 0 0 0;
-  outline: 3px red solid;
 }
 
 .project__title {
@@ -20,7 +19,6 @@
 
 .project__button {
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   border: none;
   border-bottom: 2px #ffffff solid;

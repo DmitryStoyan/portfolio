@@ -7,9 +7,27 @@ import img3 from "../../images/project3.jpg";
 
 export function Projects() {
   const [cards, setCards] = useState([
-    { id: 1, title: "Первый проект", imgSrc: img1, imgAlt: "img1" },
-    { id: 2, title: "Второй проект", imgSrc: img2, imgAlt: "img2" },
-    { id: 3, title: "Третий проект", imgSrc: img3, imgAlt: "img3" },
+    {
+      id: 1,
+      title: "Первый проект",
+      imgSrc: img1,
+      imgAlt: "img1",
+      link: "https://doka.guide/",
+    },
+    {
+      id: 2,
+      title: "Второй проект",
+      imgSrc: img2,
+      imgAlt: "img2",
+      link: "https://doka.guide/",
+    },
+    {
+      id: 3,
+      title: "Третий проект",
+      imgSrc: img3,
+      imgAlt: "img3",
+      link: "https://doka.guide/",
+    },
   ]);
 
   return (

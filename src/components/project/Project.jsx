@@ -7,7 +7,11 @@ import project3 from "../../images/project3.jpg";
 
 export function Project(props) {
   return (
-    <div className={`${styles.project} ${props.className}`}>
+    <a
+      className={`${styles.project} ${props.className}`}
+      href={props.item.link}
+      target="_blank"
+    >
       <img src={props.item.imgSrc} alt={props.item.imgAlt} />
       <div className={styles.project__descriptionWrapper}>
         <p className={styles.project__title}>{props.item.title}</p>
@@ -16,6 +20,6 @@ export function Project(props) {
           <img src={arrowButton} alt="" className={styles.button_img} />
         </button>
       </div>
-    </div>
+    </a>
   );
 }
