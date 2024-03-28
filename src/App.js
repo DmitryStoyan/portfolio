@@ -10,6 +10,8 @@ import img2 from "./images/smile.png";
 import { Advantages } from "./components/advantages/Advantages";
 import { Project } from "./components/project/Project";
 import { Projects } from "./components/projects/Projects";
+import { AboutMe } from "./components/about me/AboutMe";
+import { Footer } from "./components/footer/Footer";
 
 function App() {
   const [slides, setSlides] = useState([
@@ -51,6 +53,8 @@ function App() {
       />
       <Advantages />
       <Projects />
+      <AboutMe />
+      <Footer />
     </div>
   );
 }
