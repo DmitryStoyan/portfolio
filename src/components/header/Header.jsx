@@ -14,7 +14,7 @@ export const Header = () => (
           <button className={styles.header__button}>Change topic</button>
         </li>
       </ul>
-      <ul className={`${styles.header__list}`}>
+      <ul className={`${styles.header__list} ${styles.header__list_right}`}>
         <li className={styles.header__item}>
           <a
             href="#"
@@ -39,6 +39,7 @@ export const Header = () => (
           </a>
         </li>
       </ul>
+      <button className={styles.burgerButton}></button>
     </nav>
   </header>
 );
