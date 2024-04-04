@@ -6,7 +6,11 @@ export function Photoshoper(props) {
   const { slides } = props;
   return (
     <section className={styles.photoshoper}>
-      <div className={styles[props.info.sliderClass]}>
+      <div
+        className={`${styles[props.info.sliderClass]} ${
+          styles.sliderContainer
+        }`}
+      >
         <Slider slides={slides} />
       </div>
       <div className={styles.photoshoper__description}>

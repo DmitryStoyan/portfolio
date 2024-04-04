@@ -7,8 +7,8 @@
 .photoshoper {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 104px;
+  justify-content: space-around;
+  /* gap: 104px; */
   font-family: "Manrope", serif;
   width: 100%;
   max-width: 1200px;
@@ -83,5 +83,44 @@
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .photoshoper {
+    max-width: 706px;
+    margin: 100px auto 0;
+  }
+  .photoshoper__title {
+    font-size: 16px;
+    line-height: 20.8px;
+  }
+  .photoshoper__subtitle {
+    max-width: 337px;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 41.6px;
+    margin: 12px 0;
+  }
+  .photoshoper__imgArrow {
+    max-width: 119px;
+    transform: rotate(-10deg);
+    margin: 0;
+  }
+
+  .photoshoper__messageTitle {
+    font-size: 14px;
+    line-height: 18.06px;
+    width: 194px;
+    padding: 10px 0;
+    transform: rotate(5deg);
+  }
+
+  .photoshoper__messageWrapper {
+    align-items: center;
+  }
+
+  .sliderContainer {
+    max-width: 250px;
   }
 }
