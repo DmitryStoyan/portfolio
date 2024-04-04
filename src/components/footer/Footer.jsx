@@ -9,24 +9,49 @@ export function Footer() {
         <span className={styles.footer__smile}></span>
       </h3>
 
-      <div className={styles.footer__infoWrapper}>
-        <h4 className={styles.footer__titleInfo}>I am</h4>
-        <ul className={styles.footer__listInfo}>
-          <li className={styles.footer__itemInfo}>
-            <a href="#" className={styles.footer__linkInfo}>
-              Dmitry Stoyan
-            </a>
-          </li>
-        </ul>
-      </div>
+      <div className={styles.footer__wrapper}>
+        <div className={styles.footer__infoWrapper}>
+          <h4 className={styles.footer__titleInfo}>I am</h4>
+          <ul className={styles.footer__listInfo}>
+            <li className={styles.footer__itemInfo}>
+              <a href="#" className={styles.footer__linkInfo}>
+                Dmitry Stoyan
+              </a>
+            </li>
+          </ul>
+        </div>
 
-      <div className={styles.footer__infoWrapper}>
-        <h4 className={styles.footer__titleInfo}>I am</h4>
-        <ul className={styles.footer__listInfo}>
-          <li className={styles.footer__itemInfo}>
-            <a href="#" className={styles.footer__linkInfo}></a>
-          </li>
-        </ul>
+        <div className={styles.footer__infoWrapper}>
+          <h4 className={styles.footer__titleInfo}>Contact me</h4>
+          <ul className={styles.footer__listInfo}>
+            <li className={styles.footer__itemInfo}>
+              <a href="#" className={styles.footer__linkInfo}>
+                stoyandmitri@gmail.com
+              </a>
+            </li>
+            <li className={styles.footer__itemInfo}>
+              <a href="#" className={styles.footer__linkInfo}>
+                telegram: @JombeeMusic
+              </a>
+            </li>
+            <li className={styles.footer__itemInfo}>
+              <a href="#" className={styles.footer__linkInfo}>
+                Instagram: Jombeemusic
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div className={styles.footer__infoWrapper}>
+          <h4 className={styles.footer__titleInfo}>My current time is</h4>
+          <ul className={styles.footer__listInfo}>
+            <li className={styles.footer__itemInfo}>
+              <p className={styles.footer__textInfo}>
+                Business time: 09:00-18:00
+              </p>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   );

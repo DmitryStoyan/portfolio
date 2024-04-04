@@ -7,6 +7,12 @@
   margin: 150px auto 0;
 }
 
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 0 0 0;
+}
+
 .footer__title {
   font-family: "Manrope";
   font-size: 50px;
@@ -27,6 +33,51 @@
   height: 110px;
   margin-right: 70px;
   animation: smile-rotate 5s linear infinite;
+}
+
+.footer__listInfo {
+  list-style-type: none;
+}
+
+.footer__itemInfo {
+  margin: 0 0 16px 0;
+}
+
+.footer__itemInfo:last-of-type {
+  margin: 0;
+}
+
+.footer__titleInfo {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20.8px;
+  text-align: left;
+  color: #bebebe;
+  margin: 0 0 20px 0;
+}
+
+.footer__linkInfo {
+  font-family: Open Sans;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31.2px;
+  text-align: left;
+  color: #ebe3ce;
+}
+
+.footer__linkInfo {
+  text-decoration: none;
+  border-bottom: 1px solid #ebe3ce;
+}
+
+.footer__textInfo {
+  font-family: Open Sans;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31.2px;
+  text-align: left;
+  color: #ebe3ce;
 }
 
 @keyframes smile-rotate {
