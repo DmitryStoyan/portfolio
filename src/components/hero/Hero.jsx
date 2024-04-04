@@ -7,7 +7,6 @@ export const Hero = () => (
       <span className={styles.hero__messageTitle}>Hello, I'm</span>
       <h2 className={styles.hero__title}>Dmitry</h2>
       <h2 className={styles.hero__title}>Stoyan</h2>
-      <div className={styles.hero__img}></div>
     </div>
     <div
       className={`${styles.hero__wrapper} ${styles.hero__wrapperDescription}`}

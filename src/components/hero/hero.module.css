@@ -1,9 +1,13 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .hero {
+  background-image: url(../../images/hero-img.png);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
   font-family: "Manrope", serif;
   width: 100%;
   max-width: 1200px;
@@ -44,17 +48,6 @@
   line-height: 143px;
 }
 
-.hero__img {
-  position: absolute;
-  background-image: url(../../images/hero-img.png);
-  width: 209px;
-  height: 243px;
-  top: 0;
-  left: 40%;
-  background-repeat: no-repeat;
-  z-index: -1;
-}
-
 .hero__subtitle {
   font-size: 110px;
   font-weight: 400;
@@ -79,4 +72,35 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    max-width: 706px;
+    margin: 48px auto 0;
+    padding-top: 28px;
+  }
+
+  .hero__title {
+    font-size: 50px;
+    line-height: 65px;
+  }
+
+  .hero__subtitle {
+    font-size: 50px;
+    line-height: 65px;
+  }
+
+  .hero__description {
+    font-size: 16px;
+    line-height: 20.8px;
+  }
+
+  .hero__messageTitle {
+    width: 101px;
+    height: 41px;
+    font-size: 16px;
+    line-height: 20px;
+    transform: translateY(70%) rotate(0deg);
+  }
 }

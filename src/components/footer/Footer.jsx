@@ -25,17 +25,26 @@ export function Footer() {
           <h4 className={styles.footer__titleInfo}>Contact me</h4>
           <ul className={styles.footer__listInfo}>
             <li className={styles.footer__itemInfo}>
-              <a href="#" className={styles.footer__linkInfo}>
+              <a
+                href="#"
+                className={`${styles.footer__linkInfo} ${styles.footer__link}`}
+              >
                 stoyandmitri@gmail.com
               </a>
             </li>
             <li className={styles.footer__itemInfo}>
-              <a href="#" className={styles.footer__linkInfo}>
+              <a
+                href="#"
+                className={`${styles.footer__linkInfo} ${styles.footer__link}`}
+              >
                 telegram: @JombeeMusic
               </a>
             </li>
             <li className={styles.footer__itemInfo}>
-              <a href="#" className={styles.footer__linkInfo}>
+              <a
+                href="#"
+                className={`${styles.footer__linkInfo} ${styles.footer__link}`}
+              >
                 Instagram: Jombeemusic
               </a>
             </li>

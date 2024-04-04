@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .header {
@@ -79,6 +80,11 @@
 }
 
 @media screen and (max-width: 768px) {
+  .header {
+    max-width: 706px;
+    outline: 3px red solid;
+    margin: 0px auto 0;
+  }
   .header__list_right {
     opacity: 0;
     visibility: hidden;

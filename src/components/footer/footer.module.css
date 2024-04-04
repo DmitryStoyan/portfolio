@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .footer {
   font-family: "Manrope", serif;
   width: 100%;
@@ -68,6 +74,9 @@
 
 .footer__linkInfo {
   text-decoration: none;
+}
+
+.footer__link {
   border-bottom: 1px solid #ebe3ce;
 }
 
