@@ -6,24 +6,24 @@
 
 .footer {
   font-family: "Manrope", serif;
-  width: 100%;
-  max-width: 1200px;
+  max-width: 100%;
+  width: 120rem;
   background-color: #1c1c21;
   outline: 3px red solid;
-  margin: 150px auto 46px;
+  margin: 15rem auto 4.6rem;
 }
 
 .footer__wrapper {
   display: flex;
   justify-content: space-between;
-  margin: 60px 0 0 0;
+  margin: 6rem 0 0 0;
 }
 
 .footer__title {
   font-family: "Manrope";
-  font-size: 50px;
+  font-size: 5rem;
   font-weight: 400;
-  line-height: 65px;
+  line-height: 6.5rem;
   color: #eac566;
   display: flex;
   align-items: center;
@@ -35,9 +35,9 @@
   background-image: url(../../images/smile.png);
   background-repeat: no-repeat;
   background-position: center;
-  width: 110px;
-  height: 110px;
-  margin-right: 70px;
+  width: 11rem;
+  height: 11rem;
+  margin-right: 7rem;
   animation: smile-rotate 5s linear infinite;
 }
 
@@ -46,7 +46,7 @@
 }
 
 .footer__itemInfo {
-  margin: 0 0 16px 0;
+  margin: 0 0 1.6rem 0;
 }
 
 .footer__itemInfo:last-of-type {
@@ -55,19 +55,19 @@
 
 .footer__titleInfo {
   font-family: Open Sans;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 700;
-  line-height: 20.8px;
+  line-height: 2.08rem;
   text-align: left;
   color: #bebebe;
-  margin: 0 0 20px 0;
+  margin: 0 0 2rem 0;
 }
 
 .footer__linkInfo {
   font-family: Open Sans;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 400;
-  line-height: 31.2px;
+  line-height: 3.12rem;
   text-align: left;
   color: #ebe3ce;
 }
@@ -82,9 +82,9 @@
 
 .footer__textInfo {
   font-family: Open Sans;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 400;
-  line-height: 31.2px;
+  line-height: 3.12rem;
   text-align: left;
   color: #ebe3ce;
 }

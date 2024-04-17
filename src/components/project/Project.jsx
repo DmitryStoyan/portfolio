@@ -12,7 +12,11 @@ export function Project(props) {
       href={props.item.link}
       target="_blank"
     >
-      <img src={props.item.imgSrc} alt={props.item.imgAlt} />
+      <img
+        src={props.item.imgSrc}
+        alt={props.item.imgAlt}
+        className={styles.project__image}
+      />
       <div className={styles.project__descriptionWrapper}>
         <p className={styles.project__title}>{props.item.title}</p>
         <button className={styles.project__button}>

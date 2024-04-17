@@ -12,14 +12,19 @@
 .project__descriptionWrapper {
   display: flex;
   justify-content: space-between;
-  margin: 20px 0 0 0;
+  margin: 2rem 0 0 0;
+}
+
+.project__image {
+  width: 100%;
+  outline: 3px red solid;
 }
 
 .project__title {
   font-family: "Open Sans";
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 2.6rem;
   color: #ffffff;
 }
 
@@ -33,10 +38,10 @@
   cursor: pointer;
   transition: opacity 0.3s ease;
   font-family: "Open Sans";
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 400;
-  line-height: 26px;
-  padding: 0 0 6px 0;
+  line-height: 2.6rem;
+  padding: 0 0 0.6rem 0;
 }
 
 .project__button:hover {
@@ -44,5 +49,5 @@
 }
 
 .button_img {
-  margin: 0 0 0 10px;
+  margin: 0 0 0 1rem;
 }

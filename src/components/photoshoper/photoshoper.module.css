@@ -10,26 +10,26 @@
   justify-content: space-around;
   /* gap: 104px; */
   font-family: "Manrope", serif;
-  width: 100%;
-  max-width: 1200px;
+  max-width: 100%;
+  width: 120rem;
   outline: 3px red solid;
-  margin: 150px auto 0;
+  margin: 15rem auto 0;
 }
 
 .photoshoper__title {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 400;
-  line-height: 31px;
+  line-height: 3.1rem;
   color: #eac566;
 }
 
 .photoshoper__subtitle {
-  font-size: 46px;
+  font-size: 4.6rem;
   font-weight: 500;
-  line-height: 60px;
+  line-height: 6rem;
   color: #ebe3ce;
-  margin: 24px 0;
-  width: 588px;
+  margin: 2.4rem 0;
+  width: 58.8rem;
 }
 
 .photoshoper__messageWrapper {
@@ -46,14 +46,14 @@
 
 .photoshoper__messageTitle {
   display: block;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 2.6rem;
   background-color: #e9e9eb;
   color: #2a2a29;
-  border-radius: 24.5px 24.5px 4px 24.5px;
-  width: 263px;
-  padding: 10px 0;
+  border-radius: 2.45rem 2.45rem 0.4rem 2.45rem;
+  width: 26.3rem;
+  padding: 1rem 0;
   filter: blur(0.5px);
   text-align: center;
   transform: rotate(5deg);
@@ -61,10 +61,10 @@
 
 .photoshoper__title_text {
   font-family: "Open Sans";
-  font-size: 17px;
+  font-size: 1.7rem;
   font-weight: 400;
-  line-height: 25.5px;
-  max-width: 409px;
+  line-height: 2.55rem;
+  max-width: 40.9rem;
   color: #ebe3ce;
 }
 
@@ -83,44 +83,5 @@
   }
   100% {
     transform: rotate(360deg);
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .photoshoper {
-    max-width: 706px;
-    margin: 100px auto 0;
-  }
-  .photoshoper__title {
-    font-size: 16px;
-    line-height: 20.8px;
-  }
-  .photoshoper__subtitle {
-    max-width: 337px;
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 41.6px;
-    margin: 12px 0;
-  }
-  .photoshoper__imgArrow {
-    max-width: 119px;
-    transform: rotate(-10deg);
-    margin: 0;
-  }
-
-  .photoshoper__messageTitle {
-    font-size: 14px;
-    line-height: 18.06px;
-    width: 194px;
-    padding: 10px 0;
-    transform: rotate(5deg);
-  }
-
-  .photoshoper__messageWrapper {
-    align-items: center;
-  }
-
-  .sliderContainer {
-    max-width: 250px;
   }
 }

@@ -7,11 +7,11 @@
 
 .header {
   font-family: "Manrope", serif;
-  width: 100%;
-  max-width: 1200px;
+  max-width: 100%;
+  width: 120rem;
   background-color: #1c1c21;
   outline: 3px red solid;
-  margin: 43px auto 0;
+  margin: 4.3rem auto 0;
 }
 
 .header__navigation {
@@ -27,7 +27,7 @@
 }
 
 .header__item {
-  margin: 0 28px 0 0;
+  margin: 0 2.8rem 0 0;
 }
 
 .header__item:last-of-type {
@@ -37,9 +37,9 @@
 .header__link {
   text-decoration: none;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 600;
-  line-height: 26px;
+  line-height: 2.6rem;
   transition: opacity 0.3s ease;
   color: #eac566;
 }
@@ -50,11 +50,11 @@
 
 .header__button {
   background-color: transparent;
-  border: 1px #fff solid;
+  border: 0.1rem #fff solid;
   color: #fff;
-  width: 137px;
-  height: 32px;
-  font-size: 14px;
+  width: 13.7rem;
+  height: 3.2rem;
+  font-size: 1.4rem;
   font-weight: 400;
   cursor: pointer;
   transition: opacity 0.3s ease;
@@ -62,8 +62,8 @@
 
 .burgerButton {
   background-image: url(../../images/burger-button.svg);
-  width: 24px;
-  height: 24px;
+  width: 2.4rem;
+  height: 2.4rem;
   border: 0;
   background-color: inherit;
   /* visibility: hidden;
@@ -77,25 +77,4 @@
 
 .header__link_active {
   color: #eac566;
-}
-
-@media screen and (max-width: 768px) {
-  .header {
-    max-width: 706px;
-    outline: 3px red solid;
-    margin: 0px auto 0;
-  }
-  .header__list_right {
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  .header__button {
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  .burgerButton {
-    display: block;
-  }
 }

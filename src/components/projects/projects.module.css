@@ -6,28 +6,29 @@
 
 .projects {
   font-family: "Manrope", serif;
-  width: 100%;
-  max-width: 1200px;
+  max-width: 100%;
+  width: 120rem;
   background-color: #1c1c21;
   outline: 3px red solid;
-  margin: 150px auto 0;
+  margin: 15rem auto 0;
 }
 
 .projects__title {
-  font-size: 80px;
+  font-size: 8rem;
   font-weight: 400;
-  line-height: 104px;
+  line-height: 10.4rem;
   color: #eac566;
-  margin: 0 0 48px 0;
+  margin: 0 0 4.8rem 0;
 }
 
 .projects__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 2rem;
 }
 
 .fullWidth {
-  margin: 40px 0;
-  width: 100%;
+  margin: 4rem 0;
+  grid-column: span 2;
 }
