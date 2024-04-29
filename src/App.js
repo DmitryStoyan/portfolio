@@ -26,7 +26,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Hero />
+      {/* <Hero />
       <Photoshoper
         info={{
           title: "(It's me)",
@@ -54,7 +54,7 @@ function App() {
       <Advantages />
       <Projects />
       <AboutMe />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
