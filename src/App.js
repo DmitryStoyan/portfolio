@@ -26,8 +26,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {/* <Hero />
-      <Photoshoper
+      <Hero />
+      {/* <Photoshoper
         info={{
           title: "(It's me)",
           subtitle:
@@ -36,8 +36,8 @@ function App() {
           messageTitle: "there are a lot of pictures",
         }}
         slides={slides}
-      />
-      <Photoshoper
+      /> */}
+      {/* <Photoshoper
         info={{
           title: "( I can do that )",
           subtitle: "Clean code",
@@ -50,11 +50,11 @@ function App() {
           text: "Are you tired working with 2, 3 or 4 different teams? Conflicts, misunderstanding, too much time spent on communication are",
         }}
         slides={slides2}
-      />
-      <Advantages />
-      <Projects />
-      <AboutMe />
-      <Footer /> */}
+      /> */}
+      {/* <Advantages /> */}
+      {/* <Projects /> */}
+      {/* <AboutMe /> */}
+      {/* <Footer /> */}
     </div>
   );
 }

@@ -11,7 +11,9 @@ html {
 body {
   max-width: 1920px;
   /* min-width: 375px; */
+  /* max-width: 1440px; */
   margin: 0 auto;
+  /* width: 120rem; */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -33,14 +35,14 @@ body {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 565px) {
   html {
-    font-size: calc(100vw / 375 * 10);
+    font-size: calc(100vw / 450 * 10);
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   html {
-    font-size: calc(100vw / 375 * 10);
+    font-size: calc(100vw / 450 * 10);
   }
 }
