@@ -6,14 +6,6 @@ export const Header = () => {
 
   const handleMenuButtonClick = () => {
     setMenuActive(!menuActive);
-    const menuButton = document.querySelector(`.${styles.menuButton}`);
-    if (menuButton.classList.contains(styles.closeButton)) {
-      menuButton.classList.remove(styles.closeButton);
-      menuButton.classList.add(styles.burgerButton);
-    } else {
-      menuButton.classList.remove(styles.burgerButton);
-      menuButton.classList.add(styles.closeButton);
-    }
   };
 
   return (
@@ -32,7 +24,11 @@ export const Header = () => {
             <button className={styles.header__button}>Change topic</button>
           </li>
         </ul>
-        <ul className={`${styles.header__list} ${styles.header__list_right}`}>
+        <ul
+          className={`${styles.header__list} ${styles.header__list_right} ${
+            menuActive ? styles.popupOpened : ""
+          }`}
+        >
           <li className={styles.header__item}>
             <a
               href="#"
@@ -59,13 +55,16 @@ export const Header = () => {
         </ul>
         <button
           className={`${styles.menuButton} ${
-            menuActive ? styles.menuButton_active : ""
-          } ${menuActive ? styles.closeButton : styles.burgerButton}`}
+            menuActive ? styles.closeButton : styles.burgerButton
+          }`}
           onClick={handleMenuButtonClick}
         ></button>
       </nav>
-
-      <div className={styles.header__menu}></div>
+      <div
+        className={`${styles.headerMenu} ${
+          menuActive ? styles.popupOpened : ""
+        }`}
+      ></div>
     </header>
   );
 };
