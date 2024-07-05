@@ -1,23 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./hero.module.css";
 
-export const Hero = () => (
-  <section className={styles.hero}>
-    <div className={`${styles.hero__wrapper} ${styles.hero__wrapperInfo}`}>
-      <span className={styles.hero__messageTitle}>Hello, I'm</span>
-      <div className={styles.titleWrapper}>
-        <h2 className={styles.hero__title}>Dmitry</h2>
-        <h2 className={styles.hero__title}>Stoyan</h2>
+export const Hero = () => {
+  const [descriptionText, setDescriptionText] = useState(
+    "Дайте мне Visual Studio Code и Я rotate этот мир на (360deg)."
+  );
+
+  const handleMouseEnter = () => {
+    setDescriptionText("Дайте мне tasks, и Я will create чудо.");
+  };
+
+  const handleMouseLeave = () => {
+    setDescriptionText(
+      "Дайте мне Visual Studio Code и Я rotate этот мир на (360deg)."
+    );
+  };
+
+  return (
+    <section className={styles.hero}>
+      <div className={`${styles.hero__wrapper} ${styles.hero__wrapperInfo}`}>
+        <span className={styles.hero__messageTitle}>Hello, I'm</span>
+        <div className={styles.titleWrapper}>
+          <h2 className={styles.hero__title}>Dmitry</h2>
+          <h2 className={styles.hero__title}>Stoyan</h2>
+        </div>
       </div>
-    </div>
-    <div
-      className={`${styles.hero__wrapper} ${styles.hero__wrapperDescription}`}
-    >
-      <p className={styles.hero__subtitle}>web developer</p>
-      <p className={styles.hero__description}>
-        Projects at the intersection of logic, meaning,marketing, design and
-        layout.Logical and effective
-      </p>
-    </div>
-  </section>
-);
+      <div
+        className={`${styles.hero__wrapper} ${styles.hero__wrapperDescription}`}
+      >
+        <p
+          className={styles.hero__subtitle}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
+          web developer
+        </p>
+        <p className={styles.hero__description}>{descriptionText}</p>
+      </div>
+    </section>
+  );
+};

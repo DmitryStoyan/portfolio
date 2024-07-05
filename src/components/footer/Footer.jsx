@@ -1,16 +1,19 @@
 import React from "react";
 import styles from "./footer.module.css";
+import smile from "../../images/smile.png";
 
 export function Footer() {
   return (
-    <section className={styles.footer}>
+    <footer className={styles.footer}>
       <h3 className={styles.footer__title}>
         ( Leave a request or write to me to start )
-        <span className={styles.footer__smile}></span>
       </h3>
+      <img className={styles.footer__smile} src={smile} alt="" />
 
       <div className={styles.footer__wrapper}>
-        <div className={styles.footer__infoWrapper}>
+        <nav
+          className={`${styles.footer__infoWrapper} ${styles.footer__infoWrapperI}`}
+        >
           <h4 className={styles.footer__titleInfo}>I am</h4>
           <ul className={styles.footer__listInfo}>
             <li className={styles.footer__itemInfo}>
@@ -19,14 +22,17 @@ export function Footer() {
               </a>
             </li>
           </ul>
-        </div>
+        </nav>
 
-        <div className={styles.footer__infoWrapper}>
+        <nav
+          className={`${styles.footer__infoWrapper} ${styles.footer__infoWrapperI2}`}
+        >
           <h4 className={styles.footer__titleInfo}>Contact me</h4>
           <ul className={styles.footer__listInfo}>
             <li className={styles.footer__itemInfo}>
               <a
                 href="#"
+                target="_blank"
                 className={`${styles.footer__linkInfo} ${styles.footer__link}`}
               >
                 stoyandmitri@gmail.com
@@ -34,7 +40,8 @@ export function Footer() {
             </li>
             <li className={styles.footer__itemInfo}>
               <a
-                href="#"
+                href="https://t.me/JombeeMusic"
+                target="_blank"
                 className={`${styles.footer__linkInfo} ${styles.footer__link}`}
               >
                 telegram: @JombeeMusic
@@ -42,16 +49,28 @@ export function Footer() {
             </li>
             <li className={styles.footer__itemInfo}>
               <a
-                href="#"
+                href="https://www.instagram.com/jombeemusic?igsh=MXF3c3ZjbzFrZjRqZA=="
+                target="_blank"
                 className={`${styles.footer__linkInfo} ${styles.footer__link}`}
               >
                 Instagram: Jombeemusic
               </a>
             </li>
+            <li className={styles.footer__itemInfo}>
+              <a
+                href="https://github.com/DmitryStoyan"
+                target="_blank"
+                className={`${styles.footer__linkInfo} ${styles.footer__link}`}
+              >
+                GitHub: https://github.com/DmitryStoyan
+              </a>
+            </li>
           </ul>
-        </div>
+        </nav>
 
-        <div className={styles.footer__infoWrapper}>
+        <div
+          className={`${styles.footer__infoWrapper} ${styles.footer__infoWrapperT}`}
+        >
           <h4 className={styles.footer__titleInfo}>My current time is</h4>
           <ul className={styles.footer__listInfo}>
             <li className={styles.footer__itemInfo}>
@@ -62,6 +81,6 @@ export function Footer() {
           </ul>
         </div>
       </div>
-    </section>
+    </footer>
   );
 }

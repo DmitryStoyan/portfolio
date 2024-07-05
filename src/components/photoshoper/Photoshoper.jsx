@@ -9,6 +9,10 @@ export function Photoshoper(props) {
       <div
         className={`${styles[props.info.sliderClass]} ${
           styles.sliderContainer
+        } ${
+          props.info.customSliderClass
+            ? styles[props.info.customSliderClass]
+            : ""
         }`}
       >
         <Slider slides={slides} />
@@ -18,16 +22,23 @@ export function Photoshoper(props) {
         <p className={styles.photoshoper__subtitle}>{props.info.subtitle}</p>
         <p className={styles.photoshoper__title_text}>{props.info.text}</p>
         <div className={`${styles.photoshoper__messageWrapper}`}>
-          <img
-            className={`${styles.photoshoper__imgArrow} ${
-              styles[props.info.messageWrapperClass]
-            }`}
-            src={props.info.imageSrc}
-            alt=""
-          />
-          <span className={`${styles.photoshoper__messageTitle}`}>
-            {props.info.messageTitle}
-          </span>
+          {props.info.imageSrc && (
+            <img
+              className={`${styles.photoshoper__imgArrow} ${
+                styles[props.info.messageWrapperClass]
+              }`}
+              src={props.info.imageSrc}
+              alt=""
+            />
+          )}
+          {props.info.messageTitle && (
+            <span
+              className={`${styles.photoshoper__messageTitle}`}
+              style={props.info.messageStyle}
+            >
+              {props.info.messageTitle}
+            </span>
+          )}
         </div>
       </div>
     </section>

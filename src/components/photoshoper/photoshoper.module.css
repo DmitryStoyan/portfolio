@@ -5,14 +5,12 @@
 }
 
 .photoshoper {
+  padding: 0 3rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  /* gap: 104px; */
   font-family: "Manrope", serif;
-  max-width: 100%;
-  width: 120rem;
-  outline: 3px red solid;
+  max-width: 120rem;
   margin: 15rem auto 0;
 }
 
@@ -52,11 +50,10 @@
   background-color: #e9e9eb;
   color: #2a2a29;
   border-radius: 2.45rem 2.45rem 0.4rem 2.45rem;
-  width: 26.3rem;
-  padding: 1rem 0;
+  padding: 1rem 1rem;
   filter: blur(0.5px);
   text-align: center;
-  transform: rotate(5deg);
+  transform: translateY(-1rem) rotate(5deg);
 }
 
 .photoshoper__title_text {
@@ -77,11 +74,131 @@
   animation: spin 5s linear infinite;
 }
 
+.custom-slider-margin {
+  margin: 2rem auto 0 !important;
+}
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1024px) {
+  .photoshoper {
+    margin: 7rem auto 0;
+  }
+
+  .photoshoper__subtitle {
+    font-size: 3rem;
+    line-height: 4rem;
+    width: 40rem;
+  }
+
+  .photoshoper__imgArrow {
+    width: 15rem;
+    margin: 0;
+  }
+
+  .photoshoper__messageTitle {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    transform: translateY(-1rem) rotate(5deg);
+  }
+
+  .photoshoper__description {
+    margin: 0 0 0 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .photoshoper__title {
+    font-size: 1.7rem;
+  }
+
+  .photoshoper__subtitle {
+    font-size: 1.9rem;
+    line-height: 3rem;
+    width: 23rem;
+    margin: 1rem 0;
+  }
+
+  .photoshoper__imgArrow {
+    width: 10rem;
+    margin: 0;
+    transform: translateY(-1rem) rotate(5deg);
+  }
+
+  .photoshoper__messageTitle {
+    font-size: 1rem;
+    padding: 0.2rem 0.5rem;
+    transform: translateY(-3rem) rotate(5deg);
+  }
+
+  .photoshoper__description {
+    margin: 0;
+  }
+
+  .photoshoper__messageWrapper {
+    padding: 3rem 0 0 0;
+  }
+}
+
+@media (max-width: 565px) {
+  .photoshoper__title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .photoshoper {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .photoshoper__description {
+    margin: 0;
+    order: 1;
+  }
+
+  .photoshoper__title {
+    font-size: 2rem;
+  }
+
+  .photoshoper__subtitle {
+    font-size: 3.2rem;
+    line-height: 4rem;
+    width: 39rem;
+    margin: 1rem 0;
+  }
+
+  .sliderContainer {
+    margin: 8rem auto 0;
+    order: 2;
+  }
+
+  .photoshoper__imgArrow {
+    width: 15rem;
+    margin: 0;
+    position: absolute;
+    left: 1rem;
+    top: 6rem;
+    z-index: 3;
+  }
+
+  .photoshoper__messageTitle {
+    font-size: 1.8rem;
+    padding: 0.6rem 1.7rem;
+    transform: translateY(0rem) rotate(5deg);
+  }
+
+  .photoshoper__messageWrapper {
+    position: relative;
+    align-items: start;
+    justify-content: end;
+    padding: 0;
   }
 }

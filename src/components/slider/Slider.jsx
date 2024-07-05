@@ -9,12 +9,12 @@ export const Slider = ({ slides }) => {
       aria-label="My Favorite Images"
       options={{
         type: "loop",
-        width: 400,
         focus: "center",
         gap: "1rem",
         wheel: true,
         wheelSleep: 300,
       }}
+      className={styles.slider}
     >
       {slides.map((slide) => (
         <SplideSlide key={slide.id}>
