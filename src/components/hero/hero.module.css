@@ -43,6 +43,14 @@
 .titleWrapper {
   display: flex;
   gap: 7.5rem;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.titleWrapper.animateSubtitle {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .hero__title {
@@ -56,6 +64,14 @@
   font-size: 11rem;
   font-weight: 400;
   color: #eac566;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.hero__subtitle.animateSubtitle {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .hero__subtitle:hover {
