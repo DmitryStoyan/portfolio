@@ -34,7 +34,7 @@ export function Projects() {
   ]);
 
   return (
-    <section className={styles.projects}>
+    <section id="projects" className={styles.projects}>
       <h2 className={styles.projects__title}>( Projects )</h2>
       <div className={styles.projects__wrapper}>
         {cards.map((item, index) => (

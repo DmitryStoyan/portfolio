@@ -43,6 +43,11 @@
   margin: 0 0 1.6rem 0;
 }
 
+.footer__itemInfo:hover {
+  transition: opacity 0.3s ease;
+  opacity: 0.7;
+}
+
 .footer__itemInfo:last-of-type {
   margin: 0;
 }
@@ -72,6 +77,11 @@
   border-bottom: 1px solid #ebe3ce;
 }
 
+.footer__link:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
 .footer__textInfo {
   font-family: Open Sans;
   font-size: 2.4rem;
@@ -84,6 +94,7 @@
 .footer__infoWrapperI {
   grid-area: info;
 }
+
 .footer__infoWrapperI2 {
   grid-area: info2;
 }
@@ -100,7 +111,7 @@
 
 @media (max-width: 1024px) {
   .footer {
-    margin: 7rem auto 0;
+    margin: 7rem auto 4rem;
   }
 
   .footer__title {
@@ -142,6 +153,10 @@
 
   .footer__infoWrapperT {
     margin: 3rem 0 0 0;
+  }
+
+  .footer__infoWrapperI2 {
+    margin-left: 10rem;
   }
 
   .footer__wrapper {
@@ -189,5 +204,9 @@
 
   .footer__linkInfo {
     font-size: 2.2rem;
+  }
+
+  .footer__infoWrapperI2 {
+    margin-left: 0;
   }
 }

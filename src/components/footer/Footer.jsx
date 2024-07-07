@@ -4,7 +4,7 @@ import smile from "../../images/smile.png";
 
 export function Footer() {
   return (
-    <footer className={styles.footer}>
+    <footer id="contacts" className={styles.footer}>
       <h3 className={styles.footer__title}>
         ( Leave a request or write to me to start )
       </h3>

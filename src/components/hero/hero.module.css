@@ -6,7 +6,6 @@
 
 .hero {
   padding: 0 3rem;
-  /* background-image: url(../../images/hero-img.png); */
   background-image: url(../../images/hero-img2.png);
   background-repeat: no-repeat;
   background-position: 53% 65%;
@@ -57,6 +56,11 @@
   font-size: 11rem;
   font-weight: 400;
   color: #eac566;
+}
+
+.hero__subtitle:hover {
+  transition: transform 0.3s ease;
+  transform: scale(1.02);
 }
 
 .hero__description {

@@ -5,7 +5,7 @@ import { Slider } from "../slider/Slider";
 export function Photoshoper(props) {
   const { slides } = props;
   return (
-    <section className={styles.photoshoper}>
+    <section id={props.info.id} className={styles.photoshoper}>
       <div
         className={`${styles[props.info.sliderClass]} ${
           styles.sliderContainer

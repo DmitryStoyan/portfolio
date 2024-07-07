@@ -4,7 +4,7 @@ import mePhoto from "../../images/hero-img2.png";
 
 export function AboutMe() {
   return (
-    <section className={styles.aboutMe}>
+    <section id="aboutMe" className={styles.aboutMe}>
       <h2 className={styles.aboutMe__title}>( About me )</h2>
       <div className={styles.aboutMe__wrapper}>
         <div className={styles.aboutMe__meWrapper}>

@@ -69,6 +69,7 @@ function App() {
       <Hero />
       <Photoshoper
         info={{
+          id: "cases",
           title: "(It's me)",
           subtitle:
             "In difficult times, I always supported people. All cases I participated in are successful",

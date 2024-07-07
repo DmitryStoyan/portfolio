@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import styles from "./header.module.css";
+import { Menu } from "../menu/Menu";
 
 export const Header = () => {
-  const [menuActive, setMenuActive] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const handleMenuButtonClick = () => {
-    setMenuActive(!menuActive);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
@@ -14,7 +15,7 @@ export const Header = () => {
         <ul className={`${styles.header__list} ${styles.header__list_left}`}>
           <li className={styles.header__item}>
             <a
-              href="#"
+              href="#header"
               className={`${styles.header__link} ${styles.header__link_logo} ${styles.header__link_active}`}
             >
               Stoyan
@@ -24,47 +25,34 @@ export const Header = () => {
             <button className={styles.header__button}>Change topic</button>
           </li>
         </ul>
-        <ul
-          className={`${styles.header__list} ${styles.header__list_right} ${
-            menuActive ? styles.popupOpened : ""
-          }`}
-        >
+        <ul className={`${styles.header__list} ${styles.header__list_right}`}>
           <li className={styles.header__item}>
-            <a
-              href="#"
-              className={`${styles.header__link} ${styles.header__link_active}`}
-            >
+            <a href="#cases" className={`${styles.header__link}`}>
               Cases
             </a>
           </li>
           <li className={styles.header__item}>
-            <a href="#" className={styles.header__link}>
+            <a href="#projects" className={styles.header__link}>
+              Projects
+            </a>
+          </li>
+          <li className={styles.header__item}>
+            <a href="#aboutMe" className={styles.header__link}>
               About me
             </a>
           </li>
           <li className={styles.header__item}>
-            <a href="#" className={styles.header__link}>
-              Price
-            </a>
-          </li>
-          <li className={styles.header__item}>
-            <a href="#" className={styles.header__link}>
-              Contact
+            <a href="#contacts" className={styles.header__link}>
+              Contacts
             </a>
           </li>
         </ul>
         <button
-          className={`${styles.menuButton} ${
-            menuActive ? styles.closeButton : styles.burgerButton
-          }`}
-          onClick={handleMenuButtonClick}
+          className={`${styles.menuButton} ${styles.burgerButton}`}
+          onClick={toggleMenu}
         ></button>
       </nav>
-      <div
-        className={`${styles.headerMenu} ${
-          menuActive ? styles.popupOpened : ""
-        }`}
-      ></div>
+      {isMenuOpen && <Menu closeMenu={toggleMenu} />}
     </header>
   );
 };
