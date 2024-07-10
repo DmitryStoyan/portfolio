@@ -13,13 +13,14 @@ export function AboutMe() {
         </div>
         <div className={styles.aboutMe__subtitleWrapper}>
           <p className={styles.aboutMe__subtitle}>
-            Some kind of product description, which we will come up with
-            ourselves. In the meantime, here will be the text of the fish.
+            Привет! Я — фронтенд-разработчик с опытом работы в Vue и React.
+            Создавал телеграм-ботов на Node.js, знаком с PWA и инструментами
+            тестирования Cypress и Jest. Использую Webpack для сборки проектов.
+            Стремлюсь к созданию современных и эффективных веб-приложений.
           </p>
           <p className={styles.aboutMe__subtitle}>
-            When we create a project, it will be necessary to briefly describe
-            the essence of the project. At the same time, we will need to leave
-            the meaning for the Overview block.
+            Еще в музыкальной школе я понял как сложно учить сольфеджио, и
+            перешел в программирование. Иногда хочу обратно на сольфеджио...
           </p>
         </div>
       </div>

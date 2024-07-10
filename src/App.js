@@ -72,7 +72,7 @@ function App() {
           id: "cases",
           title: "(It's me)",
           subtitle:
-            "In difficult times, I always supported people. All cases I participated in are successful",
+            "Нетворкинг - моя сильная сторона и я дружу с самыми разными людьми!",
           imageSrc: arrowSrc,
           messageTitle: "Это мои друзья :-)",
         }}
@@ -81,14 +81,14 @@ function App() {
       <Photoshoper
         info={{
           title: "( I can do that )",
-          subtitle: "Clean code",
+          subtitle: "More creativity",
           title_text:
             "Are you tired working with 2, 3 or 4 different teams? Conflicts, misunderstanding, too much time spent on communication are",
           imageSrc: hideElements ? null : smileImg,
           messageTitle: hideElements ? null : "это идеальный код",
           sliderClass: "photoshoper__slider_right",
           messageWrapperClass: "photoshoper__messageTitle_right",
-          text: "Are you tired working with 2, 3 or 4 different teams? Conflicts, misunderstanding, too much time spent on communication are",
+          text: "Кому-то из них сложно найти любовь, а с кем-то мы не можем решить, играть сегодня в Доту или CS... Я стремлюсь создавать приложения которые облегчают жизнь разным людям. Ниже подробнее о них.",
           customSliderClass: hideElements ? "custom-slider-margin" : "",
         }}
         slides={slides2}

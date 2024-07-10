@@ -8,25 +8,25 @@ export function Advantages() {
       id: 1,
       title: "Adaptive Design",
       subtitle:
-        "Are you tired working with 2, 3 or 4 different teams? Conflicts, misunderstanding, too much time spent on communication are ",
+        "Я специализируюсь на создании интерфейсов, которые идеально отображаются на различных устройствах, обеспечивая удобство использования для всех пользователей.",
     },
     {
       id: 2,
-      title: "Code optimization",
+      title: "Hard skills",
       subtitle:
-        "Non-complex approach results in lack of understanding your business goals and actions that should be taken on time.",
+        "Мой стек технологий включает HTML, CSS, JavaScript, Vue.js, React.js, а также инструменты тестирования Jest и Cypress. Я также знаком с TypeScript.",
     },
     {
       id: 3,
       title: "Soft skills",
       subtitle:
-        "Working on one project for long-term period helps us to automate the process and always be ready for  actions we plan in advance.",
+        "Я обладаю развитыми коммуникативными навыками и умею эффективно работать в команде, что помогает достигать совместных целей и поддерживать продуктивное рабочее окружение.",
     },
     {
       id: 4,
       title: "Just a good man",
       subtitle:
-        "Working on one project for long-term period helps us to automate the process and always be ready for  actions we plan in advance.",
+        "Я стремлюсь к этичному подходу в работе и в жизни, что отражается в моем отношении к коллегам, пользователям и проектам, с которыми я работаю.",
     },
   ]);
   return (

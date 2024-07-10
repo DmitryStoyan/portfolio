@@ -58,10 +58,10 @@
 
 .photoshoper__title_text {
   font-family: "Open Sans";
-  font-size: 1.7rem;
+  font-size: 2.9rem;
   font-weight: 400;
-  line-height: 2.55rem;
-  max-width: 40.9rem;
+  line-height: 3.7rem;
+  max-width: 50rem;
   color: #ebe3ce;
 }
 
@@ -92,6 +92,12 @@
     margin: 7rem auto 0;
   }
 
+  .photoshoper__title_text {
+    font-size: 2rem;
+    line-height: 2.9rem;
+    max-width: 30rem;
+  }
+
   .photoshoper__subtitle {
     font-size: 3rem;
     line-height: 4rem;
@@ -117,6 +123,11 @@
 @media (max-width: 768px) {
   .photoshoper__title {
     font-size: 1.7rem;
+  }
+
+  .photoshoper__title_text {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
   }
 
   .photoshoper__subtitle {
@@ -151,12 +162,23 @@
   .photoshoper__title {
     font-size: 1.5rem;
   }
+
+  .photoshoper__title_text {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 
 @media (max-width: 450px) {
   .photoshoper {
     flex-direction: column;
     align-items: start;
+  }
+
+  .photoshoper__title_text {
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+    max-width: 100%;
   }
 
   .photoshoper__description {
