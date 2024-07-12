@@ -46,3 +46,18 @@
   font-weight: 600;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("./Open_Sans/OpenSans-VariableFont_wdth.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("./Open_Sans/OpenSans-Italic-VariableFont_wdth.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
