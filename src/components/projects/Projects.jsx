@@ -3,7 +3,8 @@ import styles from "./projects.module.css";
 import { Project } from "../project/Project";
 import randomGame from "../../images/randomGame.png";
 import aionDestiny from "../../images/AionDestiny.png";
-import anonChat from "../../images/bot.png";
+// import anonChat from "../../images/bot.png";
+import anonChat from "../../images/anonChatImg.jpg";
 
 export function Projects() {
   const [cards, setCards] = useState([
@@ -24,7 +25,7 @@ export function Projects() {
       title: "Анонимный чат бот ТГ",
       imgSrc: anonChat,
       imgAlt: "Анонимный чат",
-      link: "https://doka.guide/",
+      link: "https://t.me/anonimnieZnakomstva1_bot",
       storyTitle: "Telegram бот 'Анонимные знакомства'",
       storySubtitle:
         "Телеграм-бот, созданный для тех, кто хочет общаться с случайными собеседниками анонимно. Бот позволяет вам встретить интересных людей из разных уголков мира прямо из вашего Телеграма.",
