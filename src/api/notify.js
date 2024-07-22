@@ -2,7 +2,7 @@ const nodemailer = require("nodemailer");
 const axios = require("axios");
 
 export default async function handler(req, res) {
-  const message = "Кто-то только что посетил ваш сайт.";
+  const message = "Кто-то только что посетил ваш сайт!";
 
   // Настройка для отправки email
   const transporter = nodemailer.createTransport({
