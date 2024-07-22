@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import axios from "axios";
 import { Header } from "./components/header/Header";
 import { Hero } from "./components/hero/Hero";
 import { Photoshoper } from "./components/photoshoper/Photoshoper";
@@ -59,6 +60,16 @@ function App() {
 
     window.addEventListener("resize", updateDimensions);
     updateDimensions();
+
+    // Отправка запроса на серверную функцию при загрузке страницы
+    axios
+      .post("/api/notify")
+      .then((response) => {
+        console.log(response.data);
+      })
+      .catch((error) => {
+        console.error("There was an error sending the notification!", error);
+      });
 
     return () => window.removeEventListener("resize", updateDimensions);
   }, []);
