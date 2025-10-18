@@ -5,6 +5,7 @@ import randomGame from "../../images/randomGame.png";
 import aionDestiny from "../../images/AionDestiny.png";
 // import anonChat from "../../images/bot.png";
 import anonChat from "../../images/anonChatImg.jpg";
+import YoBro from "../../images/YoBro.png";
 
 export function Projects() {
   const [cards, setCards] = useState([
@@ -22,14 +23,15 @@ export function Projects() {
     },
     {
       id: 2,
-      title: "Анонимный чат бот ТГ",
-      imgSrc: anonChat,
-      imgAlt: "Анонимный чат",
-      link: "https://t.me/anonimnieZnakomstva1_bot",
-      storyTitle: "Telegram бот 'Анонимные знакомства'",
+      title: "Yo Bro App",
+      imgSrc: YoBro,
+      imgAlt: "YoBro",
+      link: "https://yo-bro.vercel.app/",
+      storyTitle: "Yo Bro",
       storySubtitle:
-        "Телеграм-бот, созданный для тех, кто хочет общаться с случайными собеседниками анонимно. Бот позволяет вам встретить интересных людей из разных уголков мира прямо из вашего Телеграма.",
-      storyStackSubtitle: "Node.js, Библиотека Telegraf, БД MongoDB",
+        "Yo Bro это мобильное приложение вдохновленное знаменитым приложением 'Yo' из сериала 'Кремниевая долина'. Пользователи могут отправлять пуш уведомления 'Yo Bro’, добавлять друзей и отслеживать активность. Проект демонстрирует работу с Quasar, Vue, Pinia и интеграцию с Firebase для аутентификации и хранения данных.",
+      storyStackSubtitle:
+        "Vue, Quasar, Vite, Capacitor, Firebase, Node.js, ESLint",
       fullWidth: false,
     },
     {
@@ -42,7 +44,19 @@ export function Projects() {
       storySubtitle:
         "Random Game — это прогрессивное веб-приложение, созданное для тех, кто испытывает трудности с выбором игры из своей обширной коллекции. Это приложение в стиле рулетки добавляет элемент неожиданности и справедливости в процесс выбора игры, делая его веселым и легким.",
       storyStackSubtitle: "PWA, HTML, CSS, JavaScript",
-      fullWidth: true,
+      fullWidth: false,
+    },
+    {
+      id: 4,
+      title: "Анонимный чат бот ТГ",
+      imgSrc: anonChat,
+      imgAlt: "Анонимный чат",
+      link: "https://t.me/anonimnieZnakomstva1_bot",
+      storyTitle: "Telegram бот 'Анонимные знакомства'",
+      storySubtitle:
+        "Телеграм-бот, созданный для тех, кто хочет общаться с случайными собеседниками анонимно. Бот позволяет вам встретить интересных людей из разных уголков мира прямо из вашего Телеграма.",
+      storyStackSubtitle: "Node.js, Библиотека Telegraf, БД MongoDB",
+      fullWidth: false,
     },
   ]);
 
