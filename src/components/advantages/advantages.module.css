@@ -22,9 +22,13 @@
 }
 
 .advantages__list {
-  display: flex;
+  /* display: flex;
   list-style-type: none;
+  gap: 3.9rem; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 3.9rem;
+  list-style-type: none;
 }
 
 @media (max-width: 1024px) {
@@ -38,8 +42,8 @@
   }
 
   .advantages__list {
-    display: flex;
-    list-style-type: none;
+    /* display: flex;
+    list-style-type: none; */
     gap: 2.5rem;
   }
 }
@@ -55,7 +59,7 @@
   }
 
   .advantages__list {
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 2rem;
   }
 }
@@ -66,7 +70,7 @@
   }
 
   .advantages__list {
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 2.4rem;
   }
 }
