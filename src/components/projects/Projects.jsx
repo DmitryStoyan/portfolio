@@ -14,10 +14,10 @@ export function Projects() {
       title: "Aion Destiny",
       imgSrc: aionDestiny,
       imgAlt: "Aion Destiny",
-      link: "https://aiondestiny.net/",
+      link: "https://forum.aiondestiny.net/",
       storyTitle: "Aion Desteny",
       storySubtitle:
-        "Сайт игрового сервера Aion. Имеет регистрацию, личный кабинет, локализацию сайта на разных языках.",
+        "Сайт игрового сервера Aion. Имеет регистрацию, личный кабинет, форум, локализацию сайта на разных языках.",
       storyStackSubtitle: "HTML, CSS, PHP, JavaScript",
       fullWidth: false,
     },
