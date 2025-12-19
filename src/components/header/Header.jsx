@@ -21,29 +21,29 @@ export const Header = () => {
               Stoyan
             </a>
           </li>
-          <li className={styles.header__item}>
+          {/* <li className={styles.header__item}>
             <button className={styles.header__button}>Change topic</button>
-          </li>
+          </li> */}
         </ul>
         <ul className={`${styles.header__list} ${styles.header__list_right}`}>
-          <li className={styles.header__item}>
+          {/* <li className={styles.header__item}>
             <a href="#cases" className={`${styles.header__link}`}>
               Cases
             </a>
-          </li>
+          </li> */}
           <li className={styles.header__item}>
             <a href="#projects" className={styles.header__link}>
-              Projects
+              Проекты
             </a>
           </li>
           <li className={styles.header__item}>
             <a href="#aboutMe" className={styles.header__link}>
-              About me
+              Обо мне
             </a>
           </li>
           <li className={styles.header__item}>
             <a href="#contacts" className={styles.header__link}>
-              Contacts
+              Контакты
             </a>
           </li>
         </ul>

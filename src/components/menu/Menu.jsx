@@ -43,7 +43,7 @@ export const Menu = ({ closeMenu }) => {
         </div>
 
         <ul className={`${styles.header__list} ${styles.header__list_right}`}>
-          <li className={styles.header__item}>
+          {/* <li className={styles.header__item}>
             <a
               href="#cases"
               className={`${styles.header__link} ${styles.header__link_active}`}
@@ -51,14 +51,14 @@ export const Menu = ({ closeMenu }) => {
             >
               Cases
             </a>
-          </li>
+          </li> */}
           <li className={styles.header__item}>
             <a
               href="#projects"
               className={styles.header__link}
               onClick={(e) => handleMenuClick(e, "projects")}
             >
-              Projects
+              Проекты
             </a>
           </li>
           <li className={styles.header__item}>
@@ -67,7 +67,7 @@ export const Menu = ({ closeMenu }) => {
               className={styles.header__link}
               onClick={(e) => handleMenuClick(e, "aboutMe")}
             >
-              About me
+              Обо мне
             </a>
           </li>
           <li className={styles.header__item}>
@@ -76,7 +76,7 @@ export const Menu = ({ closeMenu }) => {
               className={styles.header__link}
               onClick={(e) => handleMenuClick(e, "contacts")}
             >
-              Contacts
+              Контакты
             </a>
           </li>
         </ul>

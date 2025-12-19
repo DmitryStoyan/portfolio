@@ -67,7 +67,7 @@ function App() {
     <div className="App">
       <Header />
       <Hero />
-      <Photoshoper
+      {/* <Photoshoper
         info={{
           id: "cases",
           title: "(It's me)",
@@ -77,8 +77,8 @@ function App() {
           messageTitle: "Это мои друзья :-)",
         }}
         slides={slides}
-      />
-      <Photoshoper
+      /> */}
+      {/* <Photoshoper
         info={{
           title: "( I can do that )",
           subtitle: "More creativity",
@@ -92,7 +92,7 @@ function App() {
           customSliderClass: hideElements ? "custom-slider-margin" : "",
         }}
         slides={slides2}
-      />
+      /> */}
       <Advantages />
       <Projects />
       <AboutMe />

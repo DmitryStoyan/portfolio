@@ -6,7 +6,7 @@ export function Advantages() {
   const [advantage, setAdvantage] = useState([
     {
       id: 1,
-      title: "Adaptive Design",
+      title: "Performance & UX",
       subtitle:
         "Проектирую и реализую адаптивные интерфейсы, корректно работающие на различных устройствах и разрешениях. Уделяю внимание UX, доступности и визуальной консистентности интерфейсов.",
     },
@@ -24,7 +24,7 @@ export function Advantages() {
     },
     {
       id: 4,
-      title: "Just a good man",
+      title: "Team Collaboration",
       subtitle:
         "Ориентирован на качество кода и долгосрочную поддержку решений. Стараюсь делать интерфейсы не только функциональными, но и продуманными с точки зрения пользователя и бизнеса.",
     },

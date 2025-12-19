@@ -80,11 +80,10 @@
 }
 
 .storyTitle {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 400;
-  text-align: center;
   margin: 2rem 0 0 0;
-  height: 9rem;
+  height: 4rem;
   overflow: hidden;
 }
 
@@ -92,7 +91,21 @@
   font-size: 1.5rem;
   margin: 2rem 0 0 0;
   height: 10rem;
-  overflow: hidden;
+    overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.storySubtitle::-webkit-scrollbar {
+  width: 4px;
+}
+
+.storySubtitle::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.storySubtitle::-webkit-scrollbar-thumb {
+  background-color: rgba(234, 197, 102, 0.6);
+  border-radius: 4px;
 }
 
 .storyStackTitle {
